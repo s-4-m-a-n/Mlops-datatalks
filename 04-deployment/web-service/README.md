@@ -4,5 +4,5 @@ pip freeze | grep scikit-learn
 ```
 
 ```
-pipenv install scikit-learn==1.5.0 flask --python=3.9
+pipenv install scikit-learn==1.5.0 flask pandas==1.4.2 --python=3.9
 ```
