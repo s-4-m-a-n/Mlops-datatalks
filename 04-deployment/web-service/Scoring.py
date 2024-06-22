@@ -56,16 +56,13 @@ def run(year, month):
 
     input_file = f'https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year:04d}-{month:02d}.parquet'
     output_file = f'output-yellow-{year:04d}-{month:02d}.parquet'
-    model_file = 'web-service/model.bin'
-
+    model_file = 'model.bin'
 
     apply_model(input_file=input_file,
                 model_file=model_file,
                 output_file=output_file,
                 year=year,
                 month=month)
-
-
 
 if __name__ == "__main__":
     # year = 2023
